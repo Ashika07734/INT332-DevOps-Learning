@@ -3,7 +3,7 @@
 This section covers the complete process of downloading and installing
 Docker on a system, along with verification steps.
 
-Screenshots should be added at appropriate stages for better understanding.
+Screenshots are added at appropriate stages for better understanding.
 
 ---
 
@@ -16,6 +16,8 @@ Docker should always be downloaded from the official Docker website.
 
 📸 Screenshot: Docker official download page
 
+![Docker Download Page](./screenshots/docker-download.png)
+
 ---
 
 ## Step 2: Install Docker on Windows
@@ -24,9 +26,7 @@ Docker should always be downloaded from the official Docker website.
 2. Enable WSL 2 when prompted
 3. Allow required permissions
 4. Complete the installation and restart the system
-
-📸 Screenshot: Docker installation setup
-
+   
 ---
 
 ## Step 3: Install Docker on Linux (Overview)
@@ -34,8 +34,6 @@ Docker should always be downloaded from the official Docker website.
 1. Update system packages
 2. Install Docker Engine
 3. Start and enable Docker service
-
-📸 Screenshot: Docker installation on Linux terminal
 
 ---
 
@@ -48,7 +46,9 @@ To verify Docker installation:
 
 Successful execution confirms Docker is installed correctly.
 
-📸 Screenshot: Docker version output
+📸 Screenshot: Docker installed successfully
+
+![Docker Installed Successfully](./screenshots/docker-installed.png)
 
 ---
 
@@ -65,3 +65,4 @@ Correct installation ensures:
 
 Docker installation is the foundation for container-based DevOps workflows.
 Ensuring correct setup avoids issues in later stages.
+
