@@ -1,87 +1,76 @@
-# INT332 – DevOps Virtualization and Configuration Management 🚀
+# Unit II – Image Building & Container Management 🐳
 
-This GitHub repository documents my **unit-wise learning, hands-on practical work, and observations**
-from the course **INT332: DevOps Virtualization and Configuration Management**.
+This branch contains the practical work, notes, screenshots, and documentation related to **Unit II: Image Building & Container Management**.
 
-The purpose of this repository is to **systematically track DevOps concepts and tools**
-through practical execution, screenshots, notes, and documentation,
-while following an organized **unit-wise branch structure**.
+The focus of this unit is to understand **Docker image creation, customization, container lifecycle management, and image distribution**, which are core skills for real-world DevOps workflows.
 
 ---
 
-## 🎯 Learning Outcomes
-Through this repository, I aim to:
+## 🔍 Topics Covered in Unit II
 
-- Understand **DevOps infrastructure fundamentals** such as containerization, runtimes,
-  process isolation, namespaces, and resource management
-- Build, manage, and distribute **Docker images** using registries and storage mechanisms
-- Develop **microservices-based applications** using Docker Compose
-- Automate builds using **Maven**, including dependency management and Docker integration
-- Implement **Continuous Integration (CI)** using GitHub Actions
-- Design and deploy **end-to-end CI/CD pipelines** using Jenkins
-
----
-
-## 🗂 Repository Organization (Unit-wise Branches)
-
-This repository follows a **branch-per-unit strategy**.
-Each unit is maintained in its own branch to keep the learning modular, structured, and easy to navigate.
-
-| Unit | Topics Focus | Branch Name |
-|----|--------------|-------------|
-| Unit I | DevOps & Docker Infrastructure Basics | `unit-1-devops-infrastructure` |
-| Unit II | Image Building & Container Management | `unit-2-image-building` |
-| Unit III | Microservices & Docker Compose | `unit-3-docker-compose` |
-| Unit IV | Maven Build Automation | `unit-4-maven` |
-| Unit V | Continuous Integration with GitHub Actions | `unit-5-github-actions` |
-| Unit VI | CI/CD with Jenkins | `unit-6-jenkins` |
+- Docker images and image layers  
+- Image creation using Dockerfile  
+- Dockerfile instructions:
+  - FROM  
+  - RUN  
+  - CMD  
+  - COPY  
+  - ADD  
+  - WORKDIR  
+- Image tagging and versioning  
+- Docker commit vs Dockerfile  
+- Container lifecycle management:
+  - start  
+  - stop  
+  - restart  
+  - remove  
+- Running containers in interactive and detached modes  
+- Executing commands inside running containers  
+- Container logs and inspection  
+- Pushing and pulling images from Docker Hub  
+- Understanding image repositories and tags  
 
 ---
 
-## 📂 What Each Unit Branch Contains
-Each unit branch may include:
+## 📂 Content Organization
 
-- 📄 Task descriptions and notes (Markdown format)
-- 📸 Screenshots as proof of execution
-- 🧪 Practical experiments and exercises
-- 📝 Observations and learnings
-- 📁 Documentation files (DOC/PDF where applicable)
-- 📌 Important commands and configurations
+This branch is organized in a **task-wise / day-wise manner**. Each folder may include:
 
-The internal structure may evolve as learning progresses.
+- 📄 Task description and procedural steps  
+- 📸 Screenshots as proof of execution  
+- 📝 Observations and learning outcomes  
+- 📁 Documentation files (DOC format where required)  
+- 📌 Important Docker commands and explanations  
 
-👉 Click a unit folder to explore its contents.
+Folder names may follow patterns like:
 
----
-
-## 🔄 Update Methodology
-- Content is updated **day-wise or interval-wise**
-- Each update corresponds to:
-  - A class practical
-  - A lab experiment
-  - A completed task or concept
-- Commits follow **clear and meaningful naming conventions**
+- Task-04  
+- Task-05  
+- Task-06  
+- Day-3  
+- Day-4  
 
 ---
 
-## 🎓 Purpose of This Repository
-This repository is maintained to:
-- Serve as a **personal DevOps learning log**
-- Support **academic practicals and viva preparation**
-- Enable **quick revision** of concepts and commands
-- Act as a **showcase of hands-on DevOps skills** on GitHub
+## 🧪 Practical Work Included
+
+- Pulling and tagging Docker images  
+- Creating custom images using Dockerfile  
+- Building images using `docker build`  
+- Running containers from custom images  
+- Installing software inside containers  
+- Committing container changes to new images  
+- Pushing custom images to Docker Hub  
+- Managing and inspecting containers  
 
 ---
 
-## 🛠 Tools & Technologies Covered
-- Docker & Docker Hub  
-- Docker Compose  
-- Maven  
-- Git & GitHub  
-- GitHub Actions  
-- Jenkins  
-- Linux-based environments  
+## 🔄 Update Pattern
+
+- Content is added after completing each task or lab session  
+- Updates are task-wise or day-wise  
+- Each commit represents a completed practical or concept  
 
 ---
 
-📌 *This repository will be continuously updated as new concepts and practicals are completed.*
+📌 **This branch will be continuously updated as Unit II progresses**, covering advanced image-building and container-management concepts.
