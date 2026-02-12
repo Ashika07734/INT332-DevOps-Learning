@@ -50,6 +50,8 @@ Each unit branch may include:
 
 The internal structure may evolve as learning progresses.
 
+👉 Click a unit folder to explore its contents.
+
 ---
 
 ## 🔄 Update Methodology
