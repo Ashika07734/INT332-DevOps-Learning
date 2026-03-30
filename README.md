@@ -1,85 +1,172 @@
-# INT332 – DevOps Virtualization and Configuration Management 🚀
+# Unit 4 – Maven Build Automation & Docker Integration ⚙️🐳
 
-This GitHub repository documents my **unit-wise learning, hands-on practical work, and observations**
-from the course **INT332: DevOps Virtualization and Configuration Management**.
+This branch contains the practical work, notes, screenshots, and documentation related to **Unit 4: Maven Build Automation and Docker Integration**.
 
-The purpose of this repository is to **systematically track DevOps concepts and tools**
-through practical execution, screenshots, notes, and documentation,
-while following an organized **unit-wise branch structure**.
+The focus of this unit is to understand **build automation using Maven**, lifecycle phases, dependency management, plugins, and **Dockerizing Maven-based Java applications**, which are essential skills in modern DevOps workflows.
 
 ---
 
-## 🎯 Learning Outcomes
-Through this repository, I aim to:
+# 🔍 Topics Covered in Unit 4
 
-- Understand **DevOps infrastructure fundamentals** such as containerization, runtimes,
-  process isolation, namespaces, and resource management
-- Build, manage, and distribute **Docker images** using registries and storage mechanisms
-- Develop **microservices-based applications** using Docker Compose
-- Automate builds using **Maven**, including dependency management and Docker integration
-- Implement **Continuous Integration (CI)** using GitHub Actions
-- Design and deploy **end-to-end CI/CD pipelines** using Jenkins
+## 📦 Maven Build Automation
 
----
+- Introduction to build automation  
+- Why build tools exist  
+- Problems solved by automated builds  
+- Introduction to Maven  
+- Project Object Model (POM)  
+- Standard Maven directory structure  
 
-## 🗂 Repository Organization (Unit-wise Branches)
+### Maven Build Lifecycle Phases:
 
-This repository follows a **branch-per-unit strategy**.
-Each unit is maintained in its own branch to keep the learning modular, structured, and easy to navigate.
+- validate  
+- compile  
+- test  
+- package  
+- verify  
+- install  
+- deploy  
 
-| Unit | Topics Focus | Branch Name |
-|----|--------------|-------------|
-| Unit I | DevOps & Docker Infrastructure Basics | `unit-1-devops-infrastructure` |
-| Unit II | Image Building & Container Management | `unit-2-Image-Building-Container-Management` |
-| Unit III | Microservices & Docker Compose | `unit-3-docker-compose` |
-| Unit IV | Maven Build Automation | `unit-4-maven` |
-| Unit V | Continuous Integration with GitHub Actions | `unit-5-github-actions` |
-| Unit VI | CI/CD with Jenkins | `unit-6-jenkins` |
+### Dependency Concepts:
 
----
-
-## 📂 What Each Unit Branch Contains
-Each unit branch may include:
-
-- 📄 Task descriptions and notes (Markdown format)
-- 📸 Screenshots as proof of execution
-- 🧪 Practical experiments and exercises
-- 📝 Observations and learnings
-- 📁 Documentation files (DOC/PDF where applicable)
-- 📌 Important commands and configurations
-
-The internal structure may evolve as learning progresses.
+- Parent POM  
+- Dependency scopes  
+- Transitive dependencies  
+- Version conflicts and resolution  
+- Dependency management  
 
 ---
 
-## 🔄 Update Methodology
-- Content is updated **day-wise or interval-wise**
-- Each update corresponds to:
-  - A class practical
-  - A lab experiment
-  - A completed task or concept
-- Commits follow **clear and meaningful naming conventions**
+## 🔌 Maven Plugins
+
+- Understanding Maven plugins  
+- Plugin execution basics  
+
+### Important Plugins Covered:
+
+- Maven Compiler Plugin  
+- Maven Surefire Plugin (Unit Testing)  
+- Maven Shade Plugin (Uber/Fat JAR)  
 
 ---
 
-## 🎓 Purpose of This Repository
-This repository is maintained to:
-- Serve as a **personal DevOps learning log**
-- Support **academic practicals and viva preparation**
-- Enable **quick revision** of concepts and commands
-- Act as a **showcase of hands-on DevOps skills** on GitHub
+## 🐳 Maven and Docker Integration
+
+- Introduction to Dockerizing Maven applications  
+- Using dockerfile-maven-plugin  
+- Creating Dockerfile for Maven project  
+- Building Docker images  
+- Running containerized Java applications  
 
 ---
 
-## 🛠 Tools & Technologies Covered
-- Docker & Docker Hub  
-- Docker Compose  
-- Maven  
+# 📂 Content Organization
+
+This branch is organized in a **day-wise / interval-wise format** based on lab progression.
+
+Each folder may include:
+
+- 📄 Task descriptions and notes  
+- 📸 Screenshots of execution  
+- 📝 Observations and learning outcomes  
+- 📁 Documentation files  
+- 📌 Important Maven and Docker commands  
+- 📦 Sample Maven project files  
+- 🐳 Dockerfiles  
+
+---
+
+
+---
+
+# 🧪 Practical Work Included
+
+The following practical tasks are performed in this unit:
+
+## ⚙️ Maven Setup & Project Creation
+
+- Installing Maven  
+- Verifying Maven installation  
+- Creating Maven project  
+- Understanding POM file  
+- Exploring Maven directory structure  
+
+---
+
+## 🔄 Maven Lifecycle Execution
+
+Running lifecycle commands:
+
+```bash
+mvn validate
+mvn compile
+mvn test
+mvn package
+mvn install
+mvn deploy
+```
+## 🔄 Update Pattern
+
+Content is added after completing practical tasks or lab sessions.
+
+Updates may be:
+
+- Day-wise  
+- Week-wise  
+- Task-wise  
+
+Each commit represents:
+
+- ✅ Completed task  
+- ✅ Working command execution  
+- ✅ Verified concept  
+
+Screenshots are included as proof of successful execution.
+
+---
+
+## 📌 Learning Outcomes
+
+After completing Unit 4, the following skills are developed:
+
+- ✔ Understanding Maven build automation  
+- ✔ Creating and managing Maven projects  
+- ✔ Managing dependencies  
+- ✔ Running automated tests  
+- ✔ Using Maven plugins  
+- ✔ Creating executable JAR files  
+- ✔ Dockerizing Java applications  
+- ✔ Running containerized applications  
+
+These skills are important for:
+
+- ⚙️ DevOps Practices  
+- ☁️ Cloud-Based Applications  
+- 🧑‍💻 Java Development  
+- 🔄 CI/CD Workflows  
+
+---
+
+## 📎 Tools & Technologies Used
+
+- Java (JDK 17 or above)  
+- Apache Maven  
+- Docker  
 - Git & GitHub  
-- GitHub Actions  
-- Jenkins  
-- Linux-based environments  
+- VS Code / IntelliJ IDEA  
+- Command Line Interface (CLI)  
 
 ---
 
-📌 *This repository will be continuously updated as new concepts and practicals are completed.*
+## 📌 Branch Status
+
+🚧 **Active Development**
+
+This branch will be continuously updated with:
+
+- Practical tasks  
+- Commands  
+- Screenshots  
+- Documentation  
+
+as **Unit 4 progresses**.
