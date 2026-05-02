@@ -1,85 +1,240 @@
-# INT332 – DevOps Virtualization and Configuration Management 🚀
+# Unit 5 – Continuous Integration with GitHub Actions ⚙️🚀🐳
 
-This GitHub repository documents my **unit-wise learning, hands-on practical work, and observations**
-from the course **INT332: DevOps Virtualization and Configuration Management**.
+This branch contains the practical work, notes, screenshots, and documentation related to **Unit 5: Continuous Integration (CI) with GitHub Actions**.
 
-The purpose of this repository is to **systematically track DevOps concepts and tools**
-through practical execution, screenshots, notes, and documentation,
-while following an organized **unit-wise branch structure**.
+The focus of this unit is to understand **workflow automation**, **CI/CD pipelines**, and integration of **Docker with GitHub Actions** to automate application builds and deployments.
 
----
-
-## 🎯 Learning Outcomes
-Through this repository, I aim to:
-
-- Understand **DevOps infrastructure fundamentals** such as containerization, runtimes,
-  process isolation, namespaces, and resource management
-- Build, manage, and distribute **Docker images** using registries and storage mechanisms
-- Develop **microservices-based applications** using Docker Compose
-- Automate builds using **Maven**, including dependency management and Docker integration
-- Implement **Continuous Integration (CI)** using GitHub Actions
-- Design and deploy **end-to-end CI/CD pipelines** using Jenkins
+This unit helps build practical knowledge required for **modern DevOps automation workflows**.
 
 ---
 
-## 🗂 Repository Organization (Unit-wise Branches)
+# 🔍 Topics Covered in Unit 5
 
-This repository follows a **branch-per-unit strategy**.
-Each unit is maintained in its own branch to keep the learning modular, structured, and easy to navigate.
+## ⚙️ Continuous Integration with GitHub Actions
 
-| Unit | Topics Focus | Branch Name |
-|----|--------------|-------------|
-| Unit I | DevOps & Docker Infrastructure Basics | `unit-1-devops-infrastructure` |
-| Unit II | Image Building & Container Management | `unit-2-Image-Building-Container-Management` |
-| Unit III | Microservices & Docker Compose | `unit-3-docker-compose` |
-| Unit IV | Maven Build Automation | `unit-4-maven` |
-| Unit V | Continuous Integration with GitHub Actions | `unit-5-github-actions` |
-| Unit VI | CI/CD with Jenkins | `unit-6-jenkins` |
+- Introduction to Continuous Integration (CI)  
+- Understanding workflow automation  
+- Events and triggers  
+- Workflow directory structure  
 
----
+### Key Components of GitHub Actions
 
-## 📂 What Each Unit Branch Contains
-Each unit branch may include:
-
-- 📄 Task descriptions and notes (Markdown format)
-- 📸 Screenshots as proof of execution
-- 🧪 Practical experiments and exercises
-- 📝 Observations and learnings
-- 📁 Documentation files (DOC/PDF where applicable)
-- 📌 Important commands and configurations
-
-The internal structure may evolve as learning progresses.
+- Workflows  
+- Jobs  
+- Steps  
+- Actions  
+- Runners  
 
 ---
 
-## 🔄 Update Methodology
-- Content is updated **day-wise or interval-wise**
-- Each update corresponds to:
-  - A class practical
-  - A lab experiment
-  - A completed task or concept
-- Commits follow **clear and meaningful naming conventions**
+## 🔔 Workflow Triggers
+
+Different types of triggers used in workflows:
+
+- push trigger  
+- pull request trigger  
+- schedule trigger  
+- manual workflow trigger  
+
+Understanding how workflows automatically run based on events.
 
 ---
 
-## 🎓 Purpose of This Repository
-This repository is maintained to:
-- Serve as a **personal DevOps learning log**
-- Support **academic practicals and viva preparation**
-- Enable **quick revision** of concepts and commands
-- Act as a **showcase of hands-on DevOps skills** on GitHub
+## 🧩 Jobs and Steps
+
+- Understanding jobs in workflows  
+- Running multiple steps inside jobs  
+- Using shell commands in steps  
+- Matrix strategies for multiple environments  
+- Running parallel jobs  
+- Multi-job workflows  
 
 ---
 
-## 🛠 Tools & Technologies Covered
-- Docker & Docker Hub  
-- Docker Compose  
-- Maven  
-- Git & GitHub  
+## 🛒 Using Marketplace Actions
+
+- Using pre-built actions from GitHub Marketplace  
+- Using language-specific actions  
+- Implementing caching for faster builds  
+
+Examples include:
+
+- Python setup actions  
+- Java setup actions  
+- Node.js setup actions  
+
+---
+
+## 🖥️ Runners in GitHub Actions
+
+Understanding runner environments:
+
+- GitHub-hosted runners  
+- Self-hosted runners  
+
+Runner security and management concepts.
+
+---
+
+## 🐳 Docker & GitHub Actions
+
+- Building Docker images inside CI pipelines  
+- Running Docker commands in workflows  
+
+Docker operations include:
+
+- Building Docker images  
+- Pushing images to Docker Hub  
+- Pushing images to GitHub Container Registry (GHCR)  
+
+---
+
+## ☁️ Deployments Using GitHub Actions
+
+Deploying applications to:
+
+- Servers  
+- Cloud platforms  
+
+Understanding automated deployment workflows.
+
+---
+
+# 📂 Content Organization
+
+This branch is organized in a **day-wise / interval-wise format** based on lab sessions.
+
+Each folder may include:
+
+- 📄 Task descriptions and notes  
+- 📸 Screenshots of workflow execution  
+- 📝 Observations and outputs  
+- 📁 Documentation files  
+- 📌 Workflow YAML files  
+- 🐳 Docker-related files  
+
+---
+
+# 📁 Folder Naming Pattern
+
+Folders may follow patterns like:
+
+- Day-1  
+- Day-2  
+- Day-3  
+
+or
+
+- Week-1  
+- Week-2  
+
+
+---
+
+# 🧪 Practical Work Included
+
+## ⚙️ Creating GitHub Workflows
+
+- Creating `.github/workflows` directory  
+- Writing basic workflow YAML files  
+- Running workflows using push triggers  
+- Understanding workflow logs  
+
+---
+
+## 🔔 Working with Workflow Triggers
+
+Example trigger:
+
+```yaml
+on:
+  push:
+  pull_request:
+  schedule:
+```
+---
+
+## ☁️ Deployment Workflows
+
+Deploying applications automatically using workflows.
+
+Deployment targets include:
+
+- Remote servers  
+- Cloud platforms  
+
+---
+
+## 🔄 Update Pattern
+
+Content is added after completing practical sessions.
+
+Updates may be:
+
+- Day-wise  
+- Week-wise  
+- Task-based  
+
+Each commit represents:
+
+- ✅ Completed workflow  
+- ✅ Successful execution  
+- ✅ Verified automation  
+
+Screenshots are included as proof of successful workflow execution.
+
+---
+
+## 📌 Learning Outcomes
+
+After completing Unit 5, the following skills are developed:
+
+- ✔ Understanding Continuous Integration (CI)  
+- ✔ Creating GitHub Actions workflows  
+- ✔ Automating project builds  
+- ✔ Using workflow triggers  
+- ✔ Running multi-job workflows  
+- ✔ Using marketplace actions  
+- ✔ Implementing caching  
+- ✔ Working with runners  
+- ✔ Integrating Docker into CI pipelines  
+- ✔ Deploying applications automatically  
+
+These skills are important for:
+
+- ⚙️ DevOps Automation  
+- ☁️ Cloud Deployment  
+- 🚀 CI/CD Pipelines  
+- 🧑‍💻 Modern Software Development  
+
+---
+
+## 📎 Tools & Technologies Used
+
+- Git  
+- GitHub  
 - GitHub Actions  
-- Jenkins  
-- Linux-based environments  
+- Docker  
+- Docker Hub  
+- GitHub Container Registry (GHCR)  
+- YAML Workflow Files  
+- VS Code / IntelliJ IDEA  
+- Command Line Interface (CLI)  
 
 ---
 
-📌 *This repository will be continuously updated as new concepts and practicals are completed.*
+## 📌 Branch Status
+
+🚧 **Active Development**
+
+This branch will be continuously updated with:
+
+- Workflow files  
+- Docker configurations  
+- Screenshots  
+- Commands  
+- Documentation  
+
+as **Unit 5 progresses**.
+
+---
